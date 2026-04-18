@@ -1,0 +1,1076 @@
+/* General Styling */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+body { background: #fcfcfc; color: #333; }
+
+/* 1. Header & Search */ 
+  .navbar { 
+    padding: 20px 5%;
+    background: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+}
+
+.logo { color: #d4af37; font-size: 28px; font-weight: bold; letter-spacing: 2px; }
+
+.nav-links { display: inline-block; list-style: none; margin-left: 400px; margin-top: -40px ; }
+.nav-links li{
+    display: inline-block;
+}
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover { color: #d4af37;  border-bottom: 2px solid #d4af37;    }    
+.search-h{
+ float: right; 
+}
+   .search-box { 
+    display: inline-block;
+    background: #eee;
+    border-radius: 20px;
+    padding: 2px 15px;
+    width: 140px;
+    height: 30px;
+    margin-top: -35px;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    color: #111;
+    outline: none;
+    width: 90px;
+    transition: 0.4s;
+}
+
+.search-box button { display: inline; width: 10px; background: none; border: none; color: #111; cursor: pointer; } 
+
+.home-icon-svg {
+float: right;
+margin-top: -30px;
+width: 25px;
+height: 25px ;
+display: block;
+margin-right: -40px;
+}
+.home-icon-svg i {
+    color: #d4af37;
+    font-size: 20px; 
+}
+#nav-select {
+    background-color: #000;
+    color: #fff;
+}
+
+
+ .main-btn {
+  background-color:#000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px; 
+  cursor: pointer;   
+}
+
+
+.menu-box {
+  display: none;     
+  position: absolute;
+  background-color: #000;
+  color: white;
+  width: 150px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
+.menu-box a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;      
+  border-bottom: 2px solid transparent; 
+}
+
+.dropdown:hover .menu-box {
+  display: block;
+  border: 2px solid #d4af37;
+}
+
+.menu-box a:hover {
+  border-bottom: 2px solid #d4af37;     
+}
+
+.main-btn:hover{
+    border-bottom: 1px  #d4af37;
+    color: #d4af37;
+} 
+
+
+
+/* 2. Hero Section  */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url(../pic/hori.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    text-align: center;
+}
+
+.hero h1 { font-size: 50px; text-transform: uppercase; letter-spacing: 5px; }
+
+.btn-main {
+    margin-top: 20px;
+    padding: 15px 40px;
+    background: #d4af37;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.btn-main:hover{
+    opacity: 0.6 ;
+}
+
+
+/* section 3 */          
+/* 3. Features Section Styling */
+
+.TheFeatures{
+    margin: auto;
+    text-align: center;
+    padding: 2px;
+    top: 10px;
+}
+.feat-line{
+    background-color: #d4af37;
+    width: 80px;
+    height: 2px;
+    margin: auto;
+}
+
+.features {
+    padding: 80px 5%;
+    background-color: #fff;
+}
+
+.feat-card {
+    background: #fff;
+    padding: 40px 30px;
+    text-align: center;
+    width: 320px;
+    height:240px;
+    border-radius: 15px;
+    transition: 0.3s;
+    border: 1px solid #f0f0f0d3;
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+}
+.card2 {
+    margin: 0px 30px;
+}
+
+
+
+.feat-card i {
+    display: inline-block;
+    font-style: normal;
+    font-size: 30px; 
+    color: #d4af37;      
+    margin-bottom: 20px;
+    transition: 0.4s ;
+    margin: auto;
+}
+
+.feat-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.feat-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    font-weight: bold;
+}
+.feat-card:hover p {
+    color: #000;
+}
+.feat-card button {
+    border: none;
+    color: #d4af37;
+    background-color: #fff;
+}
+
+.feat-card:hover {
+   border-color: #d4af37 ;
+} 
+
+.feat-card::before {
+    content: '';
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: #d4af37;
+    transition: 0.3s;
+    position: absolute;
+    opacity: 0.3;
+    border-radius:15px ;
+}
+
+.feat-card:hover::before {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    opacity: 0.3;
+}
+
+
+/* 4. Destination Section */
+.dest-section {        padding: 80px 5%; text-align: center; }
+.container {
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    overflow: auto;
+    width: 80%;
+    margin-right: 80px;
+}
+
+.item {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    padding: 20px 0px;
+    position: relative;
+    overflow: auto;
+    text-align: center;
+    float: left;
+    border-radius: 15px;
+    border: #d4af37 solid 1px;
+    width: 30% ;
+    margin: 10px 5px;
+    text-align: center;
+}
+
+.it1{
+    width: 100%;
+}
+.it2{
+    width: 100%;
+}
+.i1 { background-image: url(../pic/malda.jpg); }
+.i2 { background-image: url(../pic/swisa.jpg); }
+.i3 { background-image: url(../pic/tokyo.jpg); }
+.i4 { background-image: url(../pic/paris.jpg); }
+.i5 { background-image: url(../pic/dobai.jpg); }
+.i6 { background-image: url(../pic/vitna.jpg); }
+.item .div-icons a i{
+width: 30px;
+height: 30px;
+line-height: 30px;
+border-radius: 4px;
+background-color: #d4af37;
+color: #000;
+}
+.div-icons{
+    margin-top: 20px;
+}
+.div-icons a{
+     margin: 0px 3px;
+     color: white;
+     font-size: 15px;
+     transition: 0.3s;
+     text-decoration: none;
+}
+.div-icons a i:hover {
+    background-color: #000;
+    color: #d4af37;
+}
+.overlay2{
+    position: absolute;
+    background-color: #000;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+.item:hover .overlay2{
+    visibility: visible;
+}
+ .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    position: relative;
+    visibility: hidden;
+} 
+.overlay h3 , .overlay p {
+color: #ffc400;
+}
+.item:hover .overlay{
+visibility: visible;
+}
+.overlay button{
+    width: 80px;
+    height: 40px;
+    background-color: #d4af37;
+    color: #000;
+    border-radius: 8px;
+}
+.overlay button:hover{
+    background-color: #000;
+    color: #d4af37;
+}
+ 
+
+/* 5. The offers */
+
+.section-offers {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center; 
+    background-color: #fff;
+}
+
+.Theoffers h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.feat-line {
+    background-color: #d4af37;
+    width: 80px;
+    height: 2px;
+    margin: 10px auto 40px;
+}
+
+.feat-container {
+    width: 90%;
+    margin: auto;
+}
+
+.feat-card {
+    background: #fff;
+    padding: 40px 20px;
+    width: 30%;       
+    height: 280px;
+    margin: 10px 1%; /* مسافات بين البطاقات */
+    border: 1px solid #f0f0f0;
+    border-radius: 15px;
+    display: inline-block; /* جعلهم بجانب بعضهم */   
+    position: relative;
+    transition: 0.4s;
+    cursor: pointer;
+    overflow: auto; 
+}
+.feat2d{
+     width: 25%;
+     height: 180px;
+     padding: 20px 10px;
+     margin: 10px 2%;
+     border: 2px solid #f0f0f0;
+}
+.feat2d i {
+   float: left;
+}
+.feat2d h3 {
+   text-align: left;
+}
+.feat2d p {
+   text-align: left;
+}
+.feat-card i {
+    display: block;
+    font-style: normal;
+    font-size: 30px;
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.feat-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.feat-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+.card-text2 {
+   margin-left: 50px;
+   margin-top: -20px;
+}
+
+.feat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: #d4af37;
+    transition: 0.5s;
+    opacity: 0;  
+    z-index: 0;           
+}
+
+.feat-card:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;                
+}
+
+.feat-card:hover {
+    border-color: #d4af37;
+    transform: translateY(-5px);
+}
+
+
+
+/* 6. Why Section */
+.why-section{
+    padding: 40px 0px;
+    background-color: #fcfcfc;
+} 
+.why-parent{
+    margin: auto;
+    width: 85%;
+}
+
+/* left side */
+
+.left{
+width:45%;
+margin-left: 50px;
+}
+
+.why-p{
+margin-top: -10px;
+}
+
+
+.left h2{
+font-size:30px;
+margin-bottom:20px;
+
+}
+.feat2-line{
+    background-color: #d4af37;
+    width: 40px;
+    height: 2px;
+    margin-top: -20px;
+}
+
+.intro{
+color:#555;
+margin-bottom:20px;
+}
+
+.items::before{
+content:"✔";
+color:#d4af37;
+}
+
+/* right side */
+
+.right{
+width:45%;
+text-align:center;
+margin-top: -350px;
+margin-left: auto;
+margin-right: -50px;
+}
+.img-dots{
+    margin-left: auto;
+    text-align: center;
+}
+.right-image{
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 350px;
+    background-size: cover;
+    background-image: url(../pic/travel1.jpg);
+    margin: auto;
+    border-radius: 15px;
+}
+.right-image:hover{
+    border: #d4af37 solid 3px;
+}
+
+/* dots */
+
+.dots{
+margin: auto;
+margin-top:15px;
+}
+
+.dots input{
+display: none;
+}
+
+/* شكل النقاط */
+
+.dots label{
+display:inline-block;
+width:12px;
+height:12px;
+background:#ccc;
+border-radius:50%;
+margin:5px;
+cursor:pointer;
+}
+#d1:checked + label,
+#d2:checked + label,
+#d3:checked + label{
+background:#d4af37;
+} 
+
+/*  7. Services Section  */
+.services {
+     height: 50vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url(../pic/under1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+.p-services{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 80px 20px;
+    margin-left: 20px;
+}                                         
+
+.service-item {
+    width: 10%;
+    text-align: center;
+    float: left;
+    padding: 10px;
+    position: relative;
+    overflow: auto;
+    margin: 0px 90px;
+}
+
+.service-item i {
+    font-size: 24px;
+    color: #d4af37;            
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.8;
+}
+
+
+/* 8. Card Section */
+
+.cards-section{
+    padding: 40px 10px;
+    background-color: #fcfcfc;
+    font-family:Arial;    
+}
+
+.cards2-parent2{
+    width: 80%;
+    margin: auto; 
+    text-align: center;
+}
+
+.cards-head{
+margin: 0px auto;
+text-align:center;
+}
+.cards-head h2{
+margin:auto;
+color:#333;
+}
+
+.cards-head hr{
+width:80px;
+height:3px;
+background:#d4af37;
+border:none;
+margin:auto;
+}
+
+/* الحاوية */
+
+.parentt3{
+overflow: auto;
+margin:auto 0px; 
+margin-left: 60px;
+}
+
+.item-card{
+width:250px;
+height:380px;            
+background:white;
+padding: 20px 0px;
+border:2px solid #d4af37;
+z-index: 1;
+border-radius:15px;
+margin: auto;
+text-align:center;
+position: relative;
+float:left;
+margin :0px  20px;
+}
+
+
+.item-card::before{
+position: absolute;
+content: "";
+width: 100%;
+height: 0;
+top: 0;
+left: 0;
+right: 0;
+background: #ffc400;
+z-index: -1;
+opacity: 0;
+border-radius: 15px;
+}
+
+.item-card:hover::before{
+width: 100%;
+height: 100%;
+opacity: 0.3;
+transition: 1s ;
+}
+
+.circle1,
+.circle2,
+.circle3{
+
+width:100px;
+height:100px;
+border-radius:50%;
+color: #000;
+margin:auto;
+line-height:100px;
+border:2px solid #d4af37;
+}
+
+
+.circle1:hover{
+background:#d4af37;
+color:white;
+}
+
+.circle2:hover{
+background:#d4af37;
+color:white;
+}
+
+.circle3:hover{
+background:#d4af37;
+color:white;
+}
+.item-card h3 {
+    color: #000;
+}
+.item-card:hover h3 {
+    color: #ff8800;
+}
+.item-card p {
+    color: #000;
+}
+
+.item-card button{
+width:180px;
+height:35px;
+border:2px solid #d4af37;
+background:white;
+border-radius:10px;
+cursor:pointer;                        
+}
+
+   .item-card  button:hover{
+     background:#d4af37;
+     color:white;
+}
+
+
+/* 9. Statistics Section */
+
+.statis-section{
+    padding: 80px 20px;
+
+}
+
+.stats {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    background-image: url(../pic/travel2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #000;
+    overflow: auto;     
+}
+
+.stat {
+    margin: auto;
+    margin: 0px 60px;
+    float: left;
+    padding: 40px 20px;
+    border-radius: 15px;
+    width: 400px;
+    height: 280px;
+}
+.stat1{
+    margin-left: 110px;
+}
+.stat2{
+    margin-left: 150px;
+} 
+
+.stat-header {
+    margin-bottom: 20px;
+}
+.stat-text{
+    float: left;
+}
+.stat-text1{
+      padding: 0px 20px;
+}
+.stat-img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    border-radius: 50%;
+    border: 2px solid #d4af37;
+    background-size: cover;
+    background-position: center;
+}
+.Assistant{
+    background-image: url(../pic/Assis1.jpeg);
+}
+.manager{
+    background-image: url(../pic/man1.jpeg);
+}
+.stat-text h2 {
+    padding: 0px 20px;
+    margin-top: 10px;
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    color: #111;
+}
+
+.stat-text span {
+    font-size: 13px;
+    color: #ffa200;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.stat-desc {
+    font-size: 15px;
+    color: #000;
+    line-height: 1.6;
+    text-align: left;                 
+}
+
+.section-container {
+    padding: 60px 10px;
+    text-align: center;
+}
+.bg-light { background-color: #f9f9f9; }
+
+.main-title h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.title-line {
+    width: 80px;
+    height: 3px;
+    background: #d4af37;     
+    margin: 0 auto 40px;
+}
+
+.grid-wrapper {
+  margin: auto;
+  padding: 20px 10px;
+  overflow: auto;
+}
+.gr1{
+     width: 90%;
+     margin-left: 90px;
+}
+.gr2{
+     width: 100%;
+     margin-left: 40px;
+}
+
+
+
+/* --- 10 (Team Section) --- */
+
+.guide-card {
+    background: #fff;
+    padding: 20px 10px;
+    float: left;
+    position: relative; 
+    width: 28%;
+    text-align:center;
+    margin: 0px 20px;
+}
+
+.img-box {
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.img-alex {
+    margin: auto;
+    width: 250px;
+    height: 200px;
+    background-image: url(../pic/alex1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.img-sarah {
+    margin: auto;
+    width: 250px;
+    height: 200px;
+    background-image: url(../pic/sarah.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.img-david {
+    margin: auto;
+    width: 250px;
+    height: 200px;
+    background-image: url(../pic/david.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.guide-card::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; width: 100%; height: 0;
+    background: #d4af37;
+    opacity: 0;
+}
+
+.guide-card:hover::after {
+width: 100%;
+height: 100%;
+opacity: 0.3;
+transition: 1s;
+}
+
+
+/* الأيقونات الثلاثة على الجانب الأيمن */
+.side-icons {
+    position: absolute;
+    visibility: hidden;
+    overflow: auto;
+}
+.guide-card:hover p {
+    color: #d4af37;
+}
+.guide-card:hover .side-icons { top: 0; right: 0;    visibility: visible;}   
+
+.side-icons a {
+    width: 40px; 
+    height: 30px;
+    background: #eee;
+    border: none;
+    color: #d4af37;
+    cursor: pointer;
+    font-size: 10px;
+    float: top ;
+    display: block;
+    padding: 10px   0px;
+    text-decoration: none;
+}
+.link-icone .fa-brands {
+    font-size: 15px;
+}
+
+
+
+/* --- 11 (Blog Card) --- */
+.blog-card {
+    position: relative;
+    width: 28%;
+    margin: auto;
+    float: left;
+    margin: 0px 20px;
+    border-radius: 15px;
+    background: #fff;
+    text-align: left;
+    border: 1px solid #eee;
+    padding: 20px 10px;
+}
+
+.blog-img {
+    position: relative;
+    overflow: auto;
+    margin: auto;
+    width: 250px;
+    height: 200px;
+    background-image: url(../pic/admin.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.admin{
+     background-image: url(../pic/admin.jpeg);
+}
+
+.travel{
+     background-image: url(../pic/travel.jpeg);
+}
+
+.global{
+     background-image: url(../pic/glopal.jpeg);
+}
+
+
+.blog-img-box img { width: 100%; transition: 0.5s; }
+
+.blog-card::before {
+    content: "";
+    position: absolute;
+    left: 0;  right: 0; width: 100%;   top : 0; height: 0;
+    background: #d4af37;
+    opacity: 0;
+    border-radius: 15px;
+}
+
+.blog-card:hover::before { 
+width: 100%;
+height: 100%;
+opacity: 0.3;
+transition: 1s;
+}
+
+.blog-content { padding: 20px;  text-align: center; }
+
+.meta-icons {
+    margin-bottom: 10px;
+}
+
+.meta-icons span {
+    font-size: 11px;
+    color: #888;
+    font-weight: bold;
+}
+.meta-icons span .link-icone i {
+color: #d4af37;                          
+}
+
+
+.blog-content h3 { font-size: 20px; margin-bottom: 10px; }
+.blog-content p { font-size: 14px; color: #666; margin-bottom: 15px; }
+.blog-content:hover  p {
+    color: #d4af37;
+}
+/* زر Read More */
+.read-more {
+    padding: 8px 20px;
+    background: transparent;
+    border:none;
+    font-size: 14px;
+    color: #d4af37;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.read-more:hover {
+    background: #d4af37;
+    color: #fff; 
+}
+
+
+/* Footer */
+.footer { background: #111; color: #fff; padding: 20px 10px; }
+.p-footer {  margin: auto; text-align: center;  }
+.f-grid{
+    border-bottom: 1px solid #333; padding-bottom: 10px; 
+    width: 100%;
+    overflow: auto;
+    margin: auto;
+}
+.copy   {    margin-bottom: auto;  }
+.copy p{
+    font-size: 12px; color: #777; 
+}
+.f2 {
+    padding: 20px 10px;
+}
+.col i      {
+color: #d4af37;
+font-size: 20px;
+opacity: 0.3;
+}
+.col i:hover {
+    opacity: 1;
+}
+.col-f-img{
+    margin: auto;
+    width: 150px;
+    height: 120px;
+    border-radius: 12px;
+    border: #d4af37 2px solid;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../pic/od.png)
+}             
